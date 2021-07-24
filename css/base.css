@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+#title{
+    text-align: center;
+    font-size: 50px;
+}
+
+#midashi1{
+    border-bottom: solid 3px #999999;
+    font-size: 30px;
+    color: #00519A;
+
+}
+
+#buy_form{
+    border-bottom: solid 3px #999999;
+    font-size: 30px;
+    color: #00519A;
+}
+
+#omikuji_midashi{
+    border-bottom: solid 3px #999999;
+    font-size: 20px;
+    color: #00519A;
+}
+
+.text{
+    font-size: 12px;
+}
+
+
+.margin{
+    margin-bottom: 40px;
+}
+
+.button_series{
+    width: 60px;
+    height: 30px;
+    border: 0.5px solid #999999;
+    border-radius: 0;
+    background: #fff;
+}
+
+.button_series:hover {
+    color: #000000;
+    background: #E9EAEB;
+}
+
+.choice {
+    width: 80px;
+    height: 30px;
+    border: 0.5px solid #999999;
+    border-radius: 0;
+    background: #fff;
+}
+
+.choice:hover {
+    color: #fff;
+    background: #00519A;
+}
+
+#omikuji{
+width: 140px;
+    height: 30px;
+    border: 0.5px solid #999999;
+    border-radius: 0;
+    background: #fff;
+}
+
+#omikuji:hover {
+    color: #000000;
+    background: #E9EAEB;
+}

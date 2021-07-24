@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/base.css">
+    <title>最終課題</title>
+</head>
+
+
+<body>
+    <header>
+        <h1 id="title">お買い物サイト</h1>
+    </header>
+
+
+    <div>
+        <h1 id="midashi1">商品価格表示</h1>
+        <button class="button_series" type="button" onclick="hukubukuro(1)">いちご</button>
+        <button class="button_series" type="button" onclick="hukubukuro(2)">みかん</button>
+        <button class="button_series" type="button" onclick="hukubukuro(3)">ぶどう</button>
+        <p class=margin></p>
+    </div>
+
+
+    <div>
+        <h1 id="buy_form">購入</h1>
+        <p class="text">購入したい数を入れてください</p>
+        <form name="buy_form">
+            <table>
+                <tr>
+                    <th class="text">いちごの個数</th>
+                    <td><input id=ichigo_num value="" name="ichigo_num" type="text" placeholder="入力してください">個</td>
+                </tr>
+                <tr>
+                    <th class="text">いちごの合計金額</th>
+                    <td><input id=ichigo_sum value="" name="ichigo_sum" type="text">円</td>
+                </tr>
+
+                <tr>
+                    <th class="text">みかんの個数</th>
+                    <td><input id=mikan_num value="" name="mikan_num" type="text" placeholder="入力してください">個</td>
+                </tr>
+                <tr>
+                    <th class="text">みかんの合計金額</th>
+                    <td><input id=mikan_sum value="" name="mikan_sum" type="text">円</td>
+                </tr>
+
+                <tr>
+                    <th class="text">ぶどうの個数</th>
+                    <td><input id=budo_num value="" name="budo_num" type="text" placeholder="入力してください">個</td>
+                </tr>
+                <tr>
+                    <th class="text">ぶどうの合計金額</th>
+                    <td><input id=budo_sum value="" name="budo_sum" type="text">円</td>
+                </tr>
+
+            </table>
+
+
+            <div>
+                <h2 id=choice_buy >購入しますか</h2>
+                <button class="choice" type="button" onclick="choice(1)">はい</button>
+                <button class="choice" type="button" onclick="choice(2)">いいえ</button>
+            </div>
+        </form>
+        <p class=margin></p>
+
+    </div>
+
+    
+
+
+    <div>
+        <h2 id="omikuji_midashi">今日の運勢占い：おみくじに挑戦！</h2>
+        <input id = "omikuji" type="button" value="おみくじを引く">
+
+        <script>
+            document.getElementById("omikuji").onclick = function(){
+                var randomomikuji = Math.random();
+                var omikuji;
+                if (randomomikuji < 0.1) 
+                    omikuji = '大吉';
+                else if (randomomikuji < 0.4)
+                    omikuji = '中吉'
+                else if (randomomikuji < 0.6)
+                    omikuji = '吉'
+                else if (randomomikuji < 0.9)
+                    omikuji = '小吉'
+                else
+                    omikuji = '凶'
+                
+                alert(omikuji);
+            }
+        </script>
+        <p class=margin></p>
+
+
+    </div>
+
+    <script src=js/sample.js></script>
+
+    <footer>
+        Copyright &copy; Miho KAWABATA, ALL Rights Reserved.
+    </footer>
+
+</body>
+
+
+</html>
